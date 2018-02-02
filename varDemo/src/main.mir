@@ -1,0 +1,103 @@
+// WARNING: This output format is intended for human consumers only
+// and is subject to change without notice. Knock yourself out.
+static main::__STATIC_FMTSTR: &[&str] = {
+    let mut _0: &[&str];                 // return pointer
+    let mut _1: &[&str; 2];
+    let mut _2: &[&str; 2];
+    let mut _3: [&str; 2];
+
+    bb0: {
+        _3 = [const "", const "\n"];     // scope 0 at <println macros>:3:18: 3:43
+        _2 = &_3;                        // scope 0 at <println macros>:3:18: 3:43
+        _1 = _2;                         // scope 0 at <println macros>:3:18: 3:43
+        _0 = _1 as &[&str] (Unsize);     // scope 0 at <println macros>:3:18: 3:43
+        return;                          // scope 0 at <println macros>:3:18: 3:43
+    }
+}
+
+fn main() -> () {
+    let mut _0: ();                      // return pointer
+    scope 1 {
+        let _1: i32;                     // "num" in scope 1 at main.rs:38:6: 38:9
+        scope 2 {
+            let _2: i32;                 // "num2" in scope 2 at main.rs:39:6: 39:10
+            scope 3 {
+                let _13: &i32;           // "__arg0" in scope 3 at main.rs:1:1: 1:1
+            }
+        }
+    }
+    let mut _3: i32;
+    let mut _4: ();
+    let mut _5: std::fmt::Arguments;
+    let mut _6: &[&str];
+    let mut _7: &[std::fmt::ArgumentV1];
+    let mut _8: &[std::fmt::ArgumentV1; 1];
+    let mut _9: &[std::fmt::ArgumentV1; 1];
+    let mut _10: [std::fmt::ArgumentV1; 1];
+    let mut _11: (&i32,);
+    let mut _12: &i32;
+    let mut _14: std::fmt::ArgumentV1;
+    let mut _15: &i32;
+    let mut _16: fn(&i32, &mut std::fmt::Formatter<'_>) -> std::result::Result<(), std::fmt::Error>;
+
+    bb0: {
+        StorageLive(_1);                 // scope 0 at main.rs:38:6: 38:9
+        _1 = const 42i32;                // scope 0 at main.rs:38:12: 38:14
+        StorageLive(_2);                 // scope 1 at main.rs:39:6: 39:10
+        StorageLive(_3);                 // scope 1 at main.rs:39:13: 39:16
+        _3 = _1;                         // scope 1 at main.rs:39:13: 39:16
+        _2 = _3;                         // scope 1 at main.rs:39:13: 39:16
+        StorageDead(_3);                 // scope 1 at main.rs:39:16: 39:16
+        StorageLive(_5);                 // scope 2 at <print macros>:2:27: 2:58
+        StorageLive(_6);                 // scope 2 at <println macros>:3:18: 3:43
+        _6 = (main::__STATIC_FMTSTR: &[&str]); // scope 2 at <println macros>:3:18: 3:43
+        StorageLive(_7);                 // scope 2 at <println macros>:3:18: 3:43
+        StorageLive(_8);                 // scope 2 at <println macros>:3:18: 3:43
+        StorageLive(_9);                 // scope 2 at <println macros>:3:18: 3:43
+        StorageLive(_10);                // scope 2 at <println macros>:3:18: 3:43
+        StorageLive(_11);                // scope 2 at <println macros>:3:18: 3:43
+        StorageLive(_12);                // scope 2 at main.rs:40:19: 40:22
+        _12 = &_1;                       // scope 2 at main.rs:40:19: 40:22
+        _11 = (_12,);                    // scope 2 at <println macros>:3:18: 3:43
+        StorageDead(_12);                // scope 2 at <println macros>:3:43: 3:43
+        StorageLive(_13);                // scope 2 at main.rs:1:1: 1:1
+        _13 = (_11.0: &i32);             // scope 2 at main.rs:1:1: 1:1
+        StorageLive(_14);                // scope 3 at <print macros>:2:27: 2:58
+        StorageLive(_15);                // scope 3 at main.rs:40:19: 40:22
+        _15 = _13;                       // scope 3 at main.rs:40:19: 40:22
+        StorageLive(_16);                // scope 3 at main.rs:40:19: 40:22
+        _16 = const std::fmt::Debug::fmt as fn(&i32, &mut std::fmt::Formatter<'_>) -> std::result::Result<(), std::fmt::Error> (ReifyFnPointer); // scope 3 at main.rs:40:19: 40:22
+        _14 = const std::fmt::ArgumentV1::new(_15, _16) -> bb1; // scope 3 at <print macros>:2:27: 2:58
+    }
+
+    bb1: {
+        StorageDead(_16);                // scope 3 at <print macros>:2:58: 2:58
+        StorageDead(_15);                // scope 3 at <print macros>:2:58: 2:58
+        _10 = [_14];                     // scope 3 at <println macros>:3:18: 3:43
+        StorageDead(_14);                // scope 3 at <println macros>:3:43: 3:43
+        StorageDead(_13);                // scope 2 at <println macros>:3:43: 3:43
+        _9 = &_10;                       // scope 2 at <println macros>:3:18: 3:43
+        _8 = _9;                         // scope 2 at <println macros>:3:18: 3:43
+        _7 = _8 as &[std::fmt::ArgumentV1] (Unsize); // scope 2 at <println macros>:3:18: 3:43
+        StorageDead(_8);                 // scope 2 at <println macros>:3:43: 3:43
+        _5 = const std::fmt::Arguments::new_v1(_6, _7) -> bb2; // scope 2 at <print macros>:2:27: 2:58
+    }
+
+    bb2: {
+        StorageDead(_7);                 // scope 2 at <print macros>:2:58: 2:58
+        StorageDead(_6);                 // scope 2 at <print macros>:2:58: 2:58
+        _4 = const std::io::_print(_5) -> bb3; // scope 2 at <print macros>:2:1: 2:60
+    }
+
+    bb3: {
+        StorageDead(_5);                 // scope 2 at <print macros>:2:60: 2:60
+        nop;                             // scope 2 at <print macros>:2:1: 2:60
+        StorageDead(_9);                 // scope 2 at <print macros>:2:60: 2:60
+        StorageDead(_10);                // scope 2 at <print macros>:2:60: 2:60
+        StorageDead(_11);                // scope 2 at <print macros>:2:60: 2:60
+        _0 = ();                         // scope 0 at main.rs:2:11: 41:2
+        StorageDead(_2);                 // scope 1 at main.rs:41:2: 41:2
+        StorageDead(_1);                 // scope 0 at main.rs:41:2: 41:2
+        return;                          // scope 0 at main.rs:41:2: 41:2
+    }
+}

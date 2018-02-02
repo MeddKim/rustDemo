@@ -16,11 +16,11 @@ fn main() {
 	// }
 	// println!("{}",x );
 //*********
-	let li = "hello";
-	let lang = "world";
+	// let li = "hello";
+	// let lang = "world";
 
-	let copy_str = skip_prefix(&li,&lang);
-	println!("{},{}",lang, li);
+	// let copy_str = skip_prefix(&li,&lang);
+	// println!("{},{}",lang, li);
 
 	 
 	// let str = "hello,world";
@@ -32,17 +32,23 @@ fn main() {
 
 	// num_pre(test,test2);
 	// num_mut(&mut test,&mut test2);
+	// 
+	// 
+//****************
+	let num = 42;
+	let num2 = num;
+	println!("{:?}", num);
 }
 
-fn skip_prefix(line: &str, prefix: &str) -> &'static str{
-	println!("{},{}",line, prefix);
-}
+// fn skip_prefix(line: &str, prefix: &str) -> &'static str{
+// 	println!("{},{}",line, prefix);
+// }
 
 
-fn num_pre(x: i32,y: i32){
-	println!("{},{}", x, y);
-}
+// fn num_pre(x: i32,y: i32){
+// 	println!("{},{}", x, y);
+// }
 
-fn num_mut(x: &mut i32,y: &mut i32){
-	println!("{},{}", x, y);
-}
+// fn num_mut(x: &mut i32,y: &mut i32){
+// 	println!("{},{}", x, y);
+// }
