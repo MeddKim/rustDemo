@@ -2,3 +2,12 @@
 target/
 *.iml
 .idea/
+**/.idea/
+*.iml
+*.ipr
+*.iws
+**/build
+/build/
+**/out/
+/out/
+**/target/
