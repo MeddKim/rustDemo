@@ -1,0 +1,6 @@
+[package]
+name = "chapter02"
+version = "0.1.0"
+authors = ["wang.zhongyi <meddkim@163.com>"]
+
+[dependencies]
